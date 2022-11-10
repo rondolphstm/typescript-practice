@@ -60,5 +60,7 @@ let damian: teacher = {
     name: "damian",
     years: 20,
     subject: ["javascript, typescript"],
-    age: 0 ,
+    age: 49,
 }
+
+console.log(damian)
