@@ -11,11 +11,11 @@ let fruit: string[]=[
     "apple"
 ]
 
-console.log(`
-    First Name: ${firstName}
-    Your Age: ${age}
-    you have many ${fruit}
-`)
+// console.log(`
+//     First Name: ${firstName}
+//     Your Age: ${age}
+//     you have many ${fruit}
+// `)
 
 enum taxForm{
     standard = "1040",
@@ -24,9 +24,9 @@ enum taxForm{
     CCorp = "1120s"
 }
 
-console.log(`
-    you need form ${taxForm.childCredit}
-`)
+// console.log(`
+//     you need form ${taxForm.childCredit}
+// `)
 
 
 // let fruit: string[]=[
@@ -38,6 +38,27 @@ function getFruit( index: number): string {
     return fruit[index]
 }
 
+function debug(message: string):void{
+    // console.log(message)
+    // no return here
+}
+
+debug("OMG No return")
+
 let chooseFruit: string = getFruit(0)
 
-console.log(` you choose an ${getFruit(0)}`)
+// console.log(` you choose an ${getFruit(0)}`)
+
+interface teacher{
+ name:string,
+ years: number,
+ subject: string[],
+ age: number
+}
+
+let damian: teacher = {
+    name: "damian",
+    years: 20,
+    subject: ["javascript, typescript"],
+    age: 0 ,
+}
