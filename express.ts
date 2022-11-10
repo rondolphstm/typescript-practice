@@ -5,6 +5,10 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+app.get("/", (req, res) => {
+    res.send("Hello Typescript")
+})
+
 app.listen(5005,()=>[
     console.log("http://localhost:5005")
 ])
